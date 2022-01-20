@@ -1,0 +1,81 @@
+$color-primary: black;
+$color-secondary: white;
+$color-pale: orangered;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-black: black;
+
+$body-font:"Open Sans" , sans-serif;
+$header-font: "Lobster", cursive;
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: $color-mid;
+}
+
+header{
+     h2 {
+   color: $color-pale;
+     }
+}
+
+footer {
+    background-image: linear-gradient($color-secondary, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-pale, $color-mid,$color-primary);
+    color: white;
+    margin: 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.navbar-dark{
+    background-color: $color-dark;
+}
+.carousel-caption {
+   color: $color-black-transparent;
+}
+.carousel {
+    border: solid $color-pale;
+}
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+#reserveModal{
+    .modal-header{
+       background-color:$color-black;
+       
+    } h3 {
+        color:white;
+    }
+}
+#loginModal{
+    .modal-header{
+        background-color:$color-mid;
+    } h3 {
+        color:white;
+    }
+}
